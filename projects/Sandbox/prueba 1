@@ -1,0 +1,22 @@
+# programa de prueba
+def suma(x,y):
+    return x+y
+
+def resta(x,y):
+    return x-y
+
+def main():
+    print("Este programa hace sumas y restas")
+
+    x=float(input("introduce un número: "))
+    y=float(input("Introduce otro número:"))
+    suma_result=suma(x,y)
+    resta_result=resta(x,y)
+    print("suma:",suma_result)
+    print("resta:",resta_result)
+
+
+if __name__ == "__main__":
+    main()
+
+        
