@@ -4,7 +4,7 @@ Computational mathematics laboratory focused on:
 
 - Dynamical systems
 - Scientific modeling
-- Artificial Intelligence (from first principles)
+- Artificial Intelligence (from mathematical foundations)
 - Mathematical programming
 - Reproducible computational research
 
@@ -46,6 +46,17 @@ Every project in this lab must include:
 4. Reproducible execution
 5. Results and discussion
 6. Future extensions
+
+## Current Work
+
+Active projects:
+
+- Foundations of computational mathematics
+- Numerical methods for root finding
+  - Bisection method
+  - Newton method
+  - Secant method
+- Binary decomposition and logarithmic algorithms
 
 ---
 
