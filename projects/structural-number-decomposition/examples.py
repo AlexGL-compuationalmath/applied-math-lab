@@ -1,4 +1,4 @@
-from snd import structural_number_decomposition, pretty_print_result
+from snd_algorithm import structural_number_decomposition
 
 
 def run_examples():
