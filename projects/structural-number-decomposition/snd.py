@@ -182,21 +182,34 @@ def pretty_print_result(result: dict) -> None:
     print(f"Absolute error:   {result['absolute_error']:.10f}")
 
 
-def main() -> None:
-    """
-    Ask the user for a positive number and run the algorithm.
-    """
+def main():
     print("Structural Number Decomposition (SND)")
     print("-" * 50)
+    print("Type a number to analyze it.")
+    print("Type 'q' to quit.\n")
 
-    user_input = input("Enter a positive real number: ").strip()
+    while True:
+        user_input = input("Enter number: ").strip()
 
-    try:
-        x = float(user_input)
-        result = structural_number_decomposition(x)
-        pretty_print_result(result)
-    except ValueError as e:
-        print(f"Error: {e}")
+        if user_input.lower() in ["q", "quit", "exit"]:
+            print("Goodbye")
+            break
+
+        try:
+            x = float(user_input)
+
+            result = structural_number_decomposition(x)
+
+            print("\nResult")
+            print("-" * 40)
+            print(f"{x} ≈ {result['structural_form']}")
+            print(f"approx value = {result['approx_value']}")
+            print(f"relative error = {result['relative_error']}")
+            print(f"absolute error = {result['absolute_error']}")
+            print()
+
+        except ValueError:
+            print("Please enter a valid positive number.\n")
 
 
 if __name__ == "__main__":
